@@ -1,0 +1,52 @@
+@mixin btn{
+    color: $colour-white;
+    font-size: 16px;
+    font-weight: 500;
+    background: $colour-button;
+    height: 50px;
+    width: 58.1%;
+    border-radius: 25px;
+    border:0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    & p{
+    text-align: center;
+    color: $colour-white;
+    background: $colour-icon;
+    position: relative;
+    right: 12px;
+    height: 20px;
+    width: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    margin:0px;
+    padding-top: 4px;
+    }
+    & i{
+    margin-left: 10px;
+    }
+    & h3{
+    margin-left: 27px;
+    }
+}
+
+@mixin instructions-card{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 86%;
+        height: 72.38px;
+        border: none;
+        border-radius: 20px;
+        background: $colour-background-primary;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        margin-left: 32px;
+        margin-right: 20px;
+    }

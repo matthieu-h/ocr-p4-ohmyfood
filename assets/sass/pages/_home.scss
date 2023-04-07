@@ -1,0 +1,102 @@
+.location{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background: $colour-background-location;
+    align-items: center;
+    gap:17px;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $colour-background-primary;
+    height: 287.5px;
+    width: 100%;
+    text-align: center;
+    &__title{
+        margin-top: 39.5px;
+        margin-bottom:0px;
+        height: 68px;
+        width: 73%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__promise{
+        font-size: 18px;
+        font-weight: 300;
+        height: 46px;
+        width: 84%;
+        margin: 0px;
+    }
+    &__btn{
+        margin-top: 27px;
+    }
+    
+}
+
+.functioning{
+    height: 392px;
+    width: 100%;
+}
+
+.instructions{
+    @include instructions;
+    &__card{
+        @include instructions-card;
+    }
+}
+
+.restaurants{
+    height: 1226px;
+    width: 100%;
+    background: $colour-background-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    & h2{
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        height: 251px;
+        width: 90.7%;
+        border-radius: 15px;
+        background: $colour-white;
+    }
+    & a{
+        text-decoration: none;
+        color:black;
+    }
+    & img{
+        height: 174px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+    }
+    & p{
+        font-size: 17px;
+        font-weight: 300;
+        margin: 0px 0px 0px 13px;
+    }
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    height: 77px;
+    & h4{
+        margin: 16px 0px 5px 13px;
+    }
+    & i{
+        margin-top: 23px;
+        margin-right: 25px;
+        color: $colour-icon;
+    }
+}

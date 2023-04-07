@@ -155,7 +155,8 @@ body {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurants p {
   font-size: 17px;
@@ -215,6 +216,4 @@ footer h5 {
   flex-direction: column;
   gap: 7px;
   margin-left: 25px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
