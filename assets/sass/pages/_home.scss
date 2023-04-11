@@ -6,6 +6,9 @@
     background: $colour-background-location;
     align-items: center;
     gap:17px;
+    & h3{
+        color: $colour-grey;
+    }
 }
 
 .cta{
@@ -25,6 +28,7 @@
         font-weight: 700;
     }
     &__promise{
+        color: $colour-grey;
         font-size: 18px;
         font-weight: 300;
         height: 46px;

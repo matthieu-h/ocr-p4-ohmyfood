@@ -51,6 +51,9 @@ body {
   align-items: center;
   gap: 17px;
 }
+.location h3 {
+  color: #353535;
+}
 
 .cta {
   display: flex;
@@ -70,6 +73,7 @@ body {
   font-weight: 700;
 }
 .cta__promise {
+  color: #353535;
   font-size: 18px;
   font-weight: 300;
   height: 46px;
