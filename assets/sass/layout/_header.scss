@@ -8,5 +8,13 @@
     width: 42%;
     margin-top: 14px;
     }
+    &__return-icon{
+        height: 16px;
+        width: 17.2px;
+        position:absolute;
+        left: 23px;
+        top: 24px;
+        filter: $colour-filter-grey;
+    }
 }
 

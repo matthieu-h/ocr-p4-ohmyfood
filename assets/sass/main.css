@@ -37,6 +37,14 @@ h5 {
   width: 42%;
   margin-top: 14px;
 }
+.heading__return-icon {
+  height: 16px;
+  width: 17.2px;
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  filter: invert(16%) sepia(11%) saturate(7%) hue-rotate(314deg) brightness(100%) contrast(87%);
+}
 
 body {
   margin: 0px;
@@ -57,6 +65,7 @@ body {
 .location__icon {
   width: 12px;
   height: 16px;
+  filter: invert(16%) sepia(11%) saturate(7%) hue-rotate(314deg) brightness(100%) contrast(87%);
 }
 
 .cta {
@@ -237,6 +246,17 @@ footer h5 {
   display: flex;
   align-items: center;
   gap: 11px;
+}
+.footer__element img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
+}
+.footer__element .utensils-icon {
+  height: 13px;
+  width: 11px;
+}
+.footer__element .handshake-icon {
+  height: 13px;
+  width: 11.93px;
 }
 
 .footer__content {
