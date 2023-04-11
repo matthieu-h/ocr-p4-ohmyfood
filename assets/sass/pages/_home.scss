@@ -9,6 +9,10 @@
     & h3{
         color: $colour-grey;
     }
+    &__icon{
+        width: 12px;
+        height: 16px;
+    }
 }
 
 .cta{
@@ -51,6 +55,21 @@
     &__card{
         @include instructions-card;
     }
+    &__mobile-icon{
+        height: 19.9px;
+        width: 13.02px;
+        filter: invert(50%) sepia(7%) saturate(0%) hue-rotate(274deg) brightness(96%) contrast(91%);
+    }
+    &__list-icon{
+        height: 15.92px;
+        width: 16px;
+        filter: invert(50%) sepia(7%) saturate(0%) hue-rotate(274deg) brightness(96%) contrast(91%);
+    }
+    &__store-icon{
+        height: 17.91px;
+        width: 18px;
+        filter: invert(44%) sepia(14%) saturate(4384%) hue-rotate(234deg) brightness(89%) contrast(93%);
+    }
 }
 
 .restaurants{
@@ -76,6 +95,7 @@
     & a{
         text-decoration: none;
         color:black;
+        
     }
     & img{
         height: 174px;
@@ -98,9 +118,13 @@
     & h4{
         margin: 16px 0px 5px 13px;
     }
-    & i{
-        margin-top: 23px;
+    & img{
+        width: 27px;
+        height: 30px;
+        filter: invert(0%) sepia(9%) saturate(498%) hue-rotate(341deg) brightness(90%) contrast(87%);
+        margin-top: 14px;
         margin-right: 25px;
-        color: $colour-icon;
+        object-fit: fill;
+        border-radius: 0px;
     }
 }

@@ -54,6 +54,10 @@ body {
 .location h3 {
   color: #353535;
 }
+.location__icon {
+  width: 12px;
+  height: 16px;
+}
 
 .cta {
   display: flex;
@@ -109,7 +113,7 @@ body {
   margin: 0px;
   padding-top: 4px;
 }
-.instructions i {
+.instructions img {
   margin-left: 10px;
 }
 .instructions h3 {
@@ -127,6 +131,21 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   margin-left: 32px;
   margin-right: 20px;
+}
+.instructions__mobile-icon {
+  height: 19.9px;
+  width: 13.02px;
+  filter: invert(50%) sepia(7%) saturate(0%) hue-rotate(274deg) brightness(96%) contrast(91%);
+}
+.instructions__list-icon {
+  height: 15.92px;
+  width: 16px;
+  filter: invert(50%) sepia(7%) saturate(0%) hue-rotate(274deg) brightness(96%) contrast(91%);
+}
+.instructions__store-icon {
+  height: 17.91px;
+  width: 18px;
+  filter: invert(44%) sepia(14%) saturate(4384%) hue-rotate(234deg) brightness(89%) contrast(93%);
 }
 
 .restaurants {
@@ -176,10 +195,15 @@ body {
 .card-content h4 {
   margin: 16px 0px 5px 13px;
 }
-.card-content i {
-  margin-top: 23px;
+.card-content img {
+  width: 27px;
+  height: 30px;
+  filter: invert(0%) sepia(9%) saturate(498%) hue-rotate(341deg) brightness(90%) contrast(87%);
+  margin-top: 14px;
   margin-right: 25px;
-  color: #9356DC;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 0px;
 }
 
 .btn {
