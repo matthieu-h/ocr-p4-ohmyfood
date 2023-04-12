@@ -4,113 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood</title>
+    <title>Ohmyfood - À la française</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="heading">
-        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood" class="heading__logo">
+        <a href="../index.html">
+            <img src="../assets/images/icones/arrow-left-solid.svg" alt="icone flèche retour" class="heading__return-icon">
+        </a>
+        <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood" class="heading__logo">
     </header>
-    <main>
-        <section class="location">
-            <img src="./assets/images/icones/location-dot-solid.svg" alt="icone localisation" class="location__icon">
-            <h3>Paris, Belleville</h3>
-        </section>
-        <section class="cta">
-            <h1 class="cta__title">Réservez le menu qui vous convient</h1>
-            <p class="cta__promise">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <input type="button" value="Explorer nos restaurants" class="cta__btn btn">
-        </section>
-        <section class="functioning">
-            <h2>Fonctionnement</h2>
-            <div class="instructions">
-                <div class="instructions__card">
-                    <p>
-                        1
-                    </p>
-                    <img src="./assets/images/icones/mobile-screen-button-solid.svg" alt="icone smartphone" class="instructions__mobile-icon">
-                    <h3>Choisissez un restaurant</h3>
-                </div>
-                <div class="instructions__card">
-                    <p>
-                        2
-                    </p>
-                    <img src="./assets/images/icones/list-ul-solid.svg" alt="icone liste" class="instructions__list-icon">
-                    <h3>Composez votre menu</h3>
-                </div>
-                <div class="instructions__card">
-                    <p>
-                        3
-                    </p>
-                    <img src="./assets/images/icones/store-solid.svg" alt="icone magasin" class="instructions__store-icon">
-                    <h3>Dégustez au restaurant</h3>
-                </div>
+    <main class="container">
+        <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'une assiette du restaurant" class="container__picture">
+        <section class="menu">
+            <div class="menu__heading">
+                <h1 class="menu__heading-restaurant-title">À la française</h1>                
+                <img src="../assets/images/icones/heart-regular.svg" alt="icone coeur" class="menu__heading-heart-icon">                
             </div>
-        </section>
-        <section class="restaurants">
-            <h2>Restaurants</h2>
-            <article class="restaurants__card">
-                <a href="./restaurants/menu-la-palette-du-gout.html" >
-                    <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'une assiette du restaurant" class=".restaurants__photo">
-                    <div class="card-content">
-                        <div>
-                            <h4>La palette du goût</h4>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <img src="./assets/images/icones/heart-regular.svg" alt="icone coeur" class="card-content__heart-icon">
-                    </div>          
-                </a>
-            </article>
-            <article class="restaurants__card">
-                <a href="./restaurants/menu-la-note-enchantee.html">             
-                    <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'une assiette du restaurant" class=".restaurants__photo">
-                    <div class="card-content">
-                        <div>
-                            <h4>La note enchantée</h4>
-                            <p>Charonne</p>
-                        </div>
-                        <img src="./assets/images/icones/heart-regular.svg" alt="icone coeur" class="card-content__heart-icon">
-                    </div>            
-                </a>
-            </article>
-            <article class="restaurants__card">
-                <a href="./restaurants/menu-a-la-francaise.html">
-                    <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'une assiette du restaurant" class=".restaurants__photo">
-                    <div class="card-content">
-                        <div>
-                            <h4>À la française</h4>
-                            <p>Cité rouge</p>
-                        </div>
-                        <img src="./assets/images/icones/heart-regular.svg" alt="icone coeur" class="card-content__heart-icon">
+            <h2>ENTRÉES</h2>
+            <div class="menu__h2-underline">
+            </div>
+            <article class="menu__starter">                
+                <div class="menu__starter-card">
+                    <h3>Tartare de poulpe acidulé</h3>
+                    <div class="menu__starter-card-content">
+                        <h4>Aux zestes d'orange</h4>
+                        <p>25€</p>
                     </div>
-                </a>
-            </article>
-            <article class="restaurants__card">
-                <a href="./restaurants/menu-le-délice-des-sens.html">
-                    <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'une assiette du restaurant" class=".restaurants__photo">
-                    <div class="card-content">
-                        <div>
-                            <h4>Le délice des sens</h4>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                        <img src="./assets/images/icones/heart-regular.svg" alt="icone coeur" class="card-content__heart-icon">
+                </div>
+                <div class="menu__starter-card">
+                    <h3>Velouté de légumes d'antan</h3>
+                    <div class="menu__starter-card-content">
+                        <h4>Carotte, panais, topinambour</h4>
+                        <p>35€</p>
                     </div>
-                </a>
+                </div>
+                <div class="menu__starter-card">
+                    <h3>Soupe à l'oignon</h3>
+                    <div class="menu__starter-card-content">
+                        <h4>Revisitée</h4>
+                        <p>20€</p>
+                    </div>
+                </div>         
             </article>
+            <h2>PLATS</h2>
+            <div class="menu__h2-underline">
+            </div>
+            <article class="menu__main">
+                <div class="menu__main-card">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <div class="menu__main-card-content">
+                        <h4>Accompagnées d'une purée de panais</h4>
+                        <p>40€</p>
+                    </div>
+                </div>
+                <div class="menu__main-card">
+                    <h3>Magret de canard</h3>
+                    <div class="menu__main-card-content">
+                        <h4>Et parmentier de pommes de terre</h4>
+                        <p>35€</p>
+                    </div>
+                </div>
+                <div class="menu__main-card">
+                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                    <div class="menu__main-card-content">
+                        <h4>Sur son lit de gnocchis aux légumes</h4>
+                        <p>44€</p>
+                    </div>
+                </div>         
+            </article>
+            <h2>DESSERTS</h2>
+            <div class="menu__h2-underline">
+            </div>
+            <article class="menu__dessert">
+                <div class="menu__dessert-card">
+                    <h3>Pétales de violettes glacés</h3>
+                    <div class="menu__dessert-card-content">
+                        <h4>Et purée de noisettes</h4>
+                        <p>18€</p>
+                    </div>
+                </div>
+                <div class="menu__dessert-card">
+                    <h3>Fondant au chocolat</h3>
+                    <div class="menu__dessert-card-content">
+                        <h4>Revisité</h4>
+                        <p>22€</p>
+                    </div>
+                </div>
+                <div class="menu__dessert-card">
+                    <h3>Millefeuille croustillant</h3>
+                    <div class="menu__dessert-card-content">
+                        <h4>Myrtilles et pâte d’amande</h4>
+                        <p>23€</p>
+                    </div>
+                </div>         
+            </article>
+            <input type="button" value="Commander" class="btn menu__order-button">            
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footer__content">
             <h5>Ohmyfood</h5>       
             <div class="footer__element">
-                <i class="fa-solid fa-utensils fa-sm"></i>
-                <p>    Proposer un restaurant</p>
+                <img src="../assets/images/icones/utensils-solid.svg" alt="icone couverts" class="utensils-icon">
+                <p>Proposer un restaurant</p>
             </div>
             <div class="footer__element">
-                <i class="fa-solid fa-handshake-angle fa-2xs"></i>
+                <img src="../assets/images/icones/handshake-angle-solid.svg" alt="icone poignée de main"class="handshake-icon">
                 <p>Devenir partenaire</p>
             </div>
             <p>Mentions légales</p>
