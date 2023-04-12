@@ -1,0 +1,79 @@
+.container{
+    background: $colour-background-primary;
+    &__picture{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    }
+}
+
+.menu{
+    width: 100%;
+    border-top-left-radius: 38px;
+    border-top-right-radius:38px;
+    background: $colour-background-primary;
+    position: relative;
+    bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    &__heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;        
+        margin-bottom: 2px;
+    }
+    &__heading-restaurant-title{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    font-weight: 400;
+    color: $colour-black;
+    margin: 0px;
+    margin-top: 32px;
+
+    }
+    &__heading-heart-icon{
+        width: 22px;
+        height: 21px;
+        margin-top: 32px;
+    }
+    & h2{
+        margin: 40px 0px 9px 13px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    &__h2-underline{
+        background-color: $colour-badge-new-and-choice;
+        width: 40px;
+        height: 5px;
+        margin-left: 13px;
+        margin-bottom: 12px;
+    }
+    &__starter{
+        @include dish;     
+    }
+    &__starter-card{
+        @include dish-card;
+    }
+    &__starter-card-content{
+        @include dish-card-content;
+    }
+    &__main{
+        @include dish;     
+    }
+    &__main-card{
+        @include dish-card;
+    }
+    &__main-card-content{
+        @include dish-card-content;
+    }
+    &__dessert{
+        @include dish;     
+    }
+    &__dessert-card{
+        @include dish-card;
+    }
+    &__dessert-card-content{
+        @include dish-card-content;
+    }
+}

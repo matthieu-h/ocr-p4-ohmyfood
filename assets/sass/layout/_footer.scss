@@ -4,36 +4,36 @@ footer{
     background:$colour-grey;
     color:$colour-white;
     & p{
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px;
     }
     & h5{
         margin: 22px 0px 16px 0px;
     }
 }
 
-.footer__element{
-    display: flex;
-    align-items: center;
-    gap:11px;
-    & img{
-        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
+.footer{
+    &__element{
+        display: flex;
+        align-items: center;
+        gap:11px;
+        & img{
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);
+        }
+        & .utensils-icon{
+            height: 13px;
+            width: 11px;
+        }
+        & .handshake-icon{
+            height: 13px;
+            width: 11.93px;
+        }
+    }    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-left: 25px;
     }
-    & .utensils-icon{
-        height: 13px;
-        width: 11px;
-    }
-    & .handshake-icon{
-        height: 13px;
-        width: 11.93px;
-    }
-
-}
-
-.footer__content{
-    display: flex;
-    flex-direction: column;
-    gap:7px;
-    margin-left: 25px;
 }

@@ -1,39 +1,27 @@
-@mixin btn{
-    color: $colour-white;
-    font-size: 16px;
-    font-weight: 500;
-    background: $colour-button;
-    height: 50px;
-    width: 58.1%;
-    border-radius: 25px;
-    border:0px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
 @mixin instructions{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:25px;
     & p{
-    text-align: center;
-    color: $colour-white;
-    background: $colour-icon;
-    position: relative;
-    right: 12px;
-    height: 20px;
-    width: 24px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 12px;
-    margin:0px;
-    padding-top: 4px;
+        text-align: center;
+        color: $colour-white;
+        background: $colour-icon;
+        position: relative;
+        right: 12px;
+        height: 20px;
+        width: 24px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 12px;
+        margin:0px;
+        padding-top: 4px;
     }
     & img{
-    margin-left: 10px;
+        margin-left: 10px;
     }
     & h3{
-    margin-left: 27px;
+        margin-left: 27px;
     }
 }
 
@@ -49,4 +37,40 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         margin-left: 32px;
         margin-right: 20px;
+}
+
+@mixin dish{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;        
+}
+
+@mixin dish-card{
+    height: 45px;
+    width: 84.8%;
+    padding: 12px 16px 12px 15px;
+    border-radius: 15px;
+    background: $colour-white;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);   
+    & h3{
+        font-size: 18px;
+        margin: 0px;
     }
+}
+
+@mixin dish-card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 19px;
+    margin-top: 5px;
+    & h4{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    & p{
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
