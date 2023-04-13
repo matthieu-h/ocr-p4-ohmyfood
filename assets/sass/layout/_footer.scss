@@ -3,6 +3,9 @@ footer{
     width: 100%;
     background:$colour-grey;
     color:$colour-white;
+    @media (min-width: 767.98px) {
+        height: 114px;
+    }
     & p{
         font-size: 16px;
         font-weight: 500;
@@ -10,10 +13,29 @@ footer{
     }
     & h5{
         margin: 22px 0px 16px 0px;
+        @media (min-width: 767.98px) {
+            position: relative;
+            left: 730px;
+            top: 16px;
+        }
     }
 }
 
 .footer{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-left: 25px;
+        @media (min-width: 767.98px) {
+            height: 84px;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+            margin-right: 245px;
+        }
+    }
     &__element{
         display: flex;
         align-items: center;
@@ -29,11 +51,5 @@ footer{
             height: 13px;
             width: 11.93px;
         }
-    }    
-    &__content{
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        margin-left: 25px;
-    }
+    }       
 }

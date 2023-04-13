@@ -5,7 +5,11 @@ body{
 h2{font-size: 24px;
     font-weight: 700;
     margin: 48px 80px 26px 20px;
-
+    @media (min-width: 767.98px) {
+        margin-left: 12.5%;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
 }
 h3{
     font-size: 16px;
@@ -23,5 +27,10 @@ h5{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
     font-weight: 400;
+}
 
+.restaurants__badge-new{
+    color: $colour-font-badge-new;
+    font-weight: 500;
+    font-size: 14px;
 }
