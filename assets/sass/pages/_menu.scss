@@ -1,16 +1,18 @@
 .container{
-    background: $colour-background-primary;
-    @media (min-width: 767.98px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: $colour-white;
-    }
-    &__picture{
+    background: $colour-white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-section{
     width: 100%;
-    height: 275px;
-    object-fit: cover;
-    }
+    height: 237px;
+    &__picture{
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+        }
 }
 
 .menu{
@@ -18,8 +20,6 @@
     border-top-left-radius: 38px;
     border-top-right-radius:38px;
     background: $colour-background-primary;
-    position: relative;
-    bottom: 38px;
     display: flex;
     flex-direction: column;
     @media (min-width: 767.98px) {
