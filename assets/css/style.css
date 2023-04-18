@@ -322,6 +322,7 @@ body {
 .menu__order-button {
   align-self: center;
   margin-top: 40px;
+  margin-bottom: 40px;
   padding-left: 44px;
   padding-right: 44px;
 }
@@ -387,17 +388,17 @@ footer h5 {
 }
 
 .container {
-  background: #F7F7F7;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media (min-width: 767.98px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #FFFFFF;
-  }
+
+.picture-section {
+  width: 100%;
+  height: 237px;
 }
-.container__picture {
+.picture-section__picture {
   width: 100%;
   height: 275px;
   object-fit: cover;
@@ -408,8 +409,6 @@ footer h5 {
   border-top-left-radius: 38px;
   border-top-right-radius: 38px;
   background: #F7F7F7;
-  position: relative;
-  bottom: 38px;
   display: flex;
   flex-direction: column;
 }
