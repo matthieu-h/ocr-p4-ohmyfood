@@ -397,11 +397,11 @@ footer h5 {
   align-items: center;
 }
 
-.picture-section {
+.picture-div {
   width: 100%;
   height: 237px;
 }
-.picture-section__picture {
+.picture-div__picture {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
