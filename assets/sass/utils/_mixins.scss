@@ -34,6 +34,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 86%;
+        max-width: 322px;
         height: 72.38px;
         border: none;
         border-radius: 20px;
@@ -42,7 +43,7 @@
         margin-left: 32px;
         margin-right: 20px;
         @media (min-width: 767.98px) {
-            width: 22%;
+            width: 22%;            
         }
 }
 
