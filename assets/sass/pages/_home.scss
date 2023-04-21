@@ -82,6 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 18px;
     @media (min-width: 767.98px) {
         height: 668px;
         gap: 50px;
@@ -173,13 +174,40 @@
         font-weight: 300;
         margin: 0px 0px 0px 13px;
     }
-    & img{
-        width: 27px;
-        height: 30px;
-        filter: invert(0%) sepia(9%) saturate(498%) hue-rotate(341deg) brightness(90%) contrast(87%);
-        margin-top: 14px;
-        margin-right: 25px;
-        object-fit: fill;
-        border-radius: 0px;
+                     
+    & .fa-heart{
+        font-size: 26px;
+        color: $colour-black;
+        margin-top: 15px;
+        margin-right: 25px;    
+
+    }
+    
+    &__heart-icons{
+        & .fa-solid{
+            color: transparent;
+            -webkit-background-clip: text;
+            background-image: $colour-button;
+            opacity: 0.5;
+            transition: all 2000ms;
+            opacity: 0;
+            z-index: 0;
+        }
+        & .fa-regular{
+            position: absolute;
+            z-index: 1;
+            &:active{
+                & +.fa-solid{
+                    opacity: 1;
+                }
+            }       
+            @media (min-width: 767.98px) {
+                &:hover{
+                    & +.fa-solid{
+                        opacity: 1;
+                    }
+                }          
+            }           
+        }
     }
 }

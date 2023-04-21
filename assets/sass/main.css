@@ -194,6 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 18px;
 }
 @media (min-width: 767.98px) {
   .restaurants {
@@ -295,15 +296,32 @@ body {
   font-weight: 300;
   margin: 0px 0px 0px 13px;
 }
-.card-content img {
-  width: 27px;
-  height: 30px;
-  filter: invert(0%) sepia(9%) saturate(498%) hue-rotate(341deg) brightness(90%) contrast(87%);
-  margin-top: 14px;
+.card-content .fa-heart {
+  font-size: 26px;
+  color: #101010;
+  margin-top: 15px;
   margin-right: 25px;
-  -o-object-fit: fill;
-     object-fit: fill;
-  border-radius: 0px;
+}
+.card-content__heart-icons .fa-solid {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0.5;
+  transition: all 2000ms;
+  opacity: 0;
+  z-index: 0;
+}
+.card-content__heart-icons .fa-regular {
+  position: absolute;
+  z-index: 1;
+}
+.card-content__heart-icons .fa-regular:active + .fa-solid {
+  opacity: 1;
+}
+@media (min-width: 767.98px) {
+  .card-content__heart-icons .fa-regular:hover + .fa-solid {
+    opacity: 1;
+  }
 }
 
 .btn {
@@ -317,8 +335,8 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .btn:hover {
-  opacity: 0.8;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .cta__btn {
@@ -565,4 +583,44 @@ footer h5 {
 .menu__dessert-card-content p {
   font-weight: 700;
   font-size: 15px;
+}
+
+.loader-content {
+  background: #F7F7F7;
+  width: 100%;
+  height: 100%;
+  animation: spin 5s infinite;
+  z-index: 100;
+}
+.loader-content .loader {
+  border-radius: 100%;
+  border: 10px solid transparent;
+  border-top-color: #99E2D0;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 0;
+  }
+}
+.loader::before {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: 1.5s spinner linear infinite;
+  animation-iteration-count: 2;
+  border: solid 10px #F7F7F7;
+  border-bottom-color: #99E2D0;
+  content: "";
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+  animation-fill-mode: forwards;
 }/*# sourceMappingURL=main.css.map */
