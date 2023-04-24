@@ -302,26 +302,23 @@ body {
   margin-top: 15px;
   margin-right: 25px;
 }
+.card-content__heart-icons {
+  position: relative;
+}
 .card-content__heart-icons .fa-solid {
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.5;
-  transition: all 2000ms;
+  transition: all 300ms;
   opacity: 0;
-  z-index: 0;
-}
-.card-content__heart-icons .fa-regular {
-  position: absolute;
   z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.card-content__heart-icons .fa-regular:active + .fa-solid {
+.card-content__heart-icons .fa-solid:hover {
   opacity: 1;
-}
-@media (min-width: 767.98px) {
-  .card-content__heart-icons .fa-regular:hover + .fa-solid {
-    opacity: 1;
-  }
 }
 
 .btn {
@@ -458,10 +455,31 @@ footer h5 {
   margin: 0px;
   margin-top: 32px;
 }
-.menu__heading-heart-icon {
+.menu__heading-heart-icons {
   width: 22px;
   height: 21px;
   margin-top: 32px;
+  position: relative;
+  bottom: 5px;
+}
+.menu__heading-heart-icons .fa-heart {
+  font-size: 26px;
+  color: #101010;
+}
+.menu__heading-heart-icons .fa-solid {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0.5;
+  transition: all 300ms;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.menu__heading-heart-icons .fa-solid:hover {
+  opacity: 1;
 }
 .menu h2 {
   margin: 40px 0px 9px 13px;
