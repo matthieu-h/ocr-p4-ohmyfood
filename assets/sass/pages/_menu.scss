@@ -112,45 +112,26 @@
     }
 }
 
-
-
-
-/*.loader-content{
-    background: $colour-background-primary;
-    width: 100%;
-    height: 100%;
-    animation: spin 5s infinite;
-    z-index: 100;
-    & .loader{
-        border-radius: 100%;
-        border: 10px solid transparent;
-        border-top-color:   $colour-badge-new-and-choice;
+.menu{
+    &__starter-block{
+        opacity: 0;
+        animation: apparition 1s ease-in-out forwards;
     }
-
-@keyframes spinner {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-      opacity: 1;
+    &__main-block{
+        opacity: 0;
+        animation: apparition 1s ease-in-out 0.33s forwards;
     }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-      opacity: 0;
+    &__dessert-block{
+        opacity: 0;
+        animation: apparition 1s ease-in-out 0.66s forwards;
     }
 }
 
-.loader::before {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    animation: 1.5s spinner linear infinite;
-    animation-iteration-count: 2;
-    border: solid 10px $colour-background-primary;
-    border-bottom-color: $colour-badge-new-and-choice;
-    content: "";
-    transform: translate3d(-50%, -50%, 0);
-    will-change: transform;
-    animation-fill-mode:forwards;
-}*/
+@keyframes apparition{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
