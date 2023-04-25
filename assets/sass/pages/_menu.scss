@@ -92,6 +92,7 @@
     &__starter-card-content{
         @include dish-card-content;
     }
+    
     &__main{
         @include dish;     
     }
@@ -149,7 +150,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    visibility: hidden;
     & .fa-check{
         font-size: 14px;
         color: $colour-badge-new-and-choice;
@@ -161,3 +162,31 @@
     }
 }
 
+.menu__starter-card:hover .menu__check-icon{
+    animation: check-apparition 300ms ease-in-out forwards;
+}
+
+@keyframes check-apparition{
+    from{
+        visibility: hidden;
+        transform: translateX(40px);
+    }
+    to{
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+
+
+.menu__starter-card:hover .menu__price p{
+    animation: price-translation 300ms ease-in-out forwards;
+}
+
+@keyframes price-translation{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-50px);
+    }
+}

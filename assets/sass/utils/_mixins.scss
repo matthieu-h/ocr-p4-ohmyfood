@@ -1,3 +1,5 @@
+
+
 @mixin instructions{
     display: flex;
     flex-direction: column;
@@ -55,8 +57,10 @@
 }
 
 @mixin dish-card{
+    overflow: hidden;
     height: 45px;
     width: 84.8%;
+    max-width: 634px;
     padding: 12px 16px 12px 15px;
     border-radius: 15px;
     background: $colour-white;
@@ -90,6 +94,8 @@
     & p{
         font-weight: 700;
         font-size: 15px;
-        align-self: flex-end;
-    }
+        position: relative;
+        top: 13px;
+        left: 51px;
+     }
 }

@@ -577,8 +577,10 @@ footer h5 {
   align-items: center;
 }
 .menu__starter-card {
+  overflow: hidden;
   height: 45px;
   width: 84.8%;
+  max-width: 634px;
   padding: 12px 16px 12px 15px;
   border-radius: 15px;
   background: #FFFFFF;
@@ -612,7 +614,9 @@ footer h5 {
 .menu__starter-card-content p {
   font-weight: 700;
   font-size: 15px;
-  align-self: flex-end;
+  position: relative;
+  top: 13px;
+  left: 51px;
 }
 .menu__main {
   display: flex;
@@ -621,8 +625,10 @@ footer h5 {
   align-items: center;
 }
 .menu__main-card {
+  overflow: hidden;
   height: 45px;
   width: 84.8%;
+  max-width: 634px;
   padding: 12px 16px 12px 15px;
   border-radius: 15px;
   background: #FFFFFF;
@@ -656,7 +662,9 @@ footer h5 {
 .menu__main-card-content p {
   font-weight: 700;
   font-size: 15px;
-  align-self: flex-end;
+  position: relative;
+  top: 13px;
+  left: 51px;
 }
 .menu__dessert {
   display: flex;
@@ -665,8 +673,10 @@ footer h5 {
   align-items: center;
 }
 .menu__dessert-card {
+  overflow: hidden;
   height: 45px;
   width: 84.8%;
+  max-width: 634px;
   padding: 12px 16px 12px 15px;
   border-radius: 15px;
   background: #FFFFFF;
@@ -700,7 +710,9 @@ footer h5 {
 .menu__dessert-card-content p {
   font-weight: 700;
   font-size: 15px;
-  align-self: flex-end;
+  position: relative;
+  top: 13px;
+  left: 51px;
 }
 
 .menu__starter-block {
@@ -735,7 +747,7 @@ footer h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  visibility: hidden;
 }
 .menu__check-icon .fa-check {
   font-size: 14px;
@@ -745,4 +757,31 @@ footer h5 {
   height: 14px;
   width: 14px;
   padding: 3px;
+}
+
+.menu__starter-card:hover .menu__check-icon {
+  animation: check-apparition 300ms ease-in-out forwards;
+}
+
+@keyframes check-apparition {
+  from {
+    visibility: hidden;
+    transform: translateX(40px);
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0px);
+  }
+}
+.menu__starter-card:hover .menu__price p {
+  animation: price-translation 300ms ease-in-out forwards;
+}
+
+@keyframes price-translation {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-50px);
+  }
 }/*# sourceMappingURL=main.css.map */
