@@ -73,6 +73,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    &:hover {
+        & .menu__check-icon{
+        animation: check-apparition 300ms ease-in-out forwards;
+        }
+        & .menu__price p{
+        animation: price-translation 300ms ease-in-out forwards;
+        }   
+    }
 }
 
 @mixin dish-card-content{
@@ -95,7 +103,7 @@
         font-weight: 700;
         font-size: 15px;
         position: relative;
-        top: 13px;
+        top: 10px;
         left: 51px;
      }
 }

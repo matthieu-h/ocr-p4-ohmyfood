@@ -594,6 +594,12 @@ footer h5 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu__starter-card:hover .menu__check-icon {
+  animation: check-apparition 300ms ease-in-out forwards;
+}
+.menu__starter-card:hover .menu__price p {
+  animation: price-translation 300ms ease-in-out forwards;
+}
 .menu__starter-card-content {
   display: flex;
   justify-content: space-between;
@@ -615,7 +621,7 @@ footer h5 {
   font-weight: 700;
   font-size: 15px;
   position: relative;
-  top: 13px;
+  top: 10px;
   left: 51px;
 }
 .menu__main {
@@ -642,6 +648,12 @@ footer h5 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu__main-card:hover .menu__check-icon {
+  animation: check-apparition 300ms ease-in-out forwards;
+}
+.menu__main-card:hover .menu__price p {
+  animation: price-translation 300ms ease-in-out forwards;
+}
 .menu__main-card-content {
   display: flex;
   justify-content: space-between;
@@ -663,7 +675,7 @@ footer h5 {
   font-weight: 700;
   font-size: 15px;
   position: relative;
-  top: 13px;
+  top: 10px;
   left: 51px;
 }
 .menu__dessert {
@@ -690,6 +702,12 @@ footer h5 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu__dessert-card:hover .menu__check-icon {
+  animation: check-apparition 300ms ease-in-out forwards;
+}
+.menu__dessert-card:hover .menu__price p {
+  animation: price-translation 300ms ease-in-out forwards;
+}
 .menu__dessert-card-content {
   display: flex;
   justify-content: space-between;
@@ -711,7 +729,7 @@ footer h5 {
   font-weight: 700;
   font-size: 15px;
   position: relative;
-  top: 13px;
+  top: 10px;
   left: 51px;
 }
 
@@ -759,10 +777,6 @@ footer h5 {
   padding: 3px;
 }
 
-.menu__starter-card:hover .menu__check-icon {
-  animation: check-apparition 300ms ease-in-out forwards;
-}
-
 @keyframes check-apparition {
   from {
     visibility: hidden;
@@ -773,10 +787,6 @@ footer h5 {
     transform: translateX(0px);
   }
 }
-.menu__starter-card:hover .menu__price p {
-  animation: price-translation 300ms ease-in-out forwards;
-}
-
 @keyframes price-translation {
   from {
     transform: translateX(0px);

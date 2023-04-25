@@ -162,10 +162,6 @@
     }
 }
 
-.menu__starter-card:hover .menu__check-icon{
-    animation: check-apparition 300ms ease-in-out forwards;
-}
-
 @keyframes check-apparition{
     from{
         visibility: hidden;
@@ -175,11 +171,6 @@
         visibility: visible;
         transform: translateX(0px);
     }
-}
-
-
-.menu__starter-card:hover .menu__price p{
-    animation: price-translation 300ms ease-in-out forwards;
 }
 
 @keyframes price-translation{
