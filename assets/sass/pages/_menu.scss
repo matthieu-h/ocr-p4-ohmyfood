@@ -112,6 +112,8 @@
     }
 }
 
+// Animations //
+
 .menu{
     &__starter-block{
         opacity: 0;
@@ -135,3 +137,27 @@
         opacity: 1;
     }
 }
+
+.menu__check-icon{
+    width: 59px;
+    height: 69px;
+    background: $colour-badge-new-and-choice;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    bottom: 14px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    & .fa-check{
+        font-size: 14px;
+        color: $colour-badge-new-and-choice;
+        background: $colour-white;
+        border-radius: 50%;
+        height: 14px;
+        width: 14px;
+        padding: 3px;
+    }
+}
+
