@@ -8,13 +8,6 @@ h2 {
   margin: 0px 80px 26px 20px;
   padding-top: 48px;
 }
-@media (min-width: 767.98px) {
-  h2 {
-    margin-left: 12.5%;
-    margin-bottom: 25px;
-    padding-top: 50px;
-  }
-}
 
 h3 {
   font-size: 16px;
@@ -275,6 +268,21 @@ footer h5 {
     height: 228px;
   }
 }
+@media (min-width: 767.98px) {
+  .functioning h2 {
+    margin-left: 12.5%;
+    margin-bottom: 25px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .functioning h2 {
+    text-align: center;
+    position: relative;
+    right: 422px;
+    margin-left: 0px;
+  }
+}
 
 .instructions {
   display: flex;
@@ -366,6 +374,15 @@ footer h5 {
     margin-left: 12.5%;
     margin-top: 30px;
     margin-bottom: -24px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants__title {
+    text-align: center;
+    position: relative;
+    left: -445px;
+    margin-left: 0px;
+    align-self: auto;
   }
 }
 .restaurants__first-row {
@@ -501,6 +518,7 @@ footer h5 {
   background: #F6F6F6;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 767.98px) {
   .menu {
@@ -548,26 +566,32 @@ footer h5 {
 .menu__heading-heart-icons .fa-solid:hover {
   opacity: 1;
 }
+.menu__heading-starter {
+  align-self: flex-start;
+}
 .menu h2 {
-  margin: 40px 0px 9px 13px;
+  margin: 40px 0px 9px 0px;
   font-weight: 300;
   font-size: 16px;
+  position: relative;
+  left: 10px;
 }
 @media (min-width: 767.98px) {
   .menu h2 {
-    margin-left: 6%;
+    left: 36px;
   }
 }
 .menu__h2-underline {
   background-color: #99E2D0;
   width: 40px;
   height: 5px;
-  margin-left: 13px;
   margin-bottom: 12px;
+  position: relative;
+  left: 11px;
 }
 @media (min-width: 767.98px) {
   .menu__h2-underline {
-    margin-left: 6%;
+    left: 36px;
   }
 }
 .menu__starter {
@@ -587,18 +611,20 @@ footer h5 {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 .menu__starter-card h3 {
-  width: 69%;
+  width: 84%;
   font-size: 18px;
   margin: 0px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__starter-card:hover .menu__check-icon {
   animation: check-apparition 300ms ease-in-out forwards;
 }
 .menu__starter-card:hover .menu__price p {
   animation: price-translation 300ms ease-in-out forwards;
+}
+.menu__starter-card:hover h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__starter-card-content {
   display: flex;
@@ -613,6 +639,7 @@ footer h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 84%;
 }
 .menu__starter-card-content .menu__price {
   display: flex;
@@ -641,18 +668,20 @@ footer h5 {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 .menu__main-card h3 {
-  width: 69%;
+  width: 84%;
   font-size: 18px;
   margin: 0px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__main-card:hover .menu__check-icon {
   animation: check-apparition 300ms ease-in-out forwards;
 }
 .menu__main-card:hover .menu__price p {
   animation: price-translation 300ms ease-in-out forwards;
+}
+.menu__main-card:hover h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__main-card-content {
   display: flex;
@@ -667,6 +696,7 @@ footer h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 84%;
 }
 .menu__main-card-content .menu__price {
   display: flex;
@@ -695,18 +725,20 @@ footer h5 {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 .menu__dessert-card h3 {
-  width: 69%;
+  width: 84%;
   font-size: 18px;
   margin: 0px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__dessert-card:hover .menu__check-icon {
   animation: check-apparition 300ms ease-in-out forwards;
 }
 .menu__dessert-card:hover .menu__price p {
   animation: price-translation 300ms ease-in-out forwards;
+}
+.menu__dessert-card:hover h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__dessert-card-content {
   display: flex;
@@ -721,6 +753,7 @@ footer h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 84%;
 }
 .menu__dessert-card-content .menu__price {
   display: flex;
@@ -734,14 +767,20 @@ footer h5 {
 }
 
 .menu__starter-block {
+  width: 90%;
+  max-width: 741px;
   opacity: 0;
   animation: apparition 1s ease-in-out forwards;
 }
 .menu__main-block {
+  width: 90%;
+  max-width: 741px;
   opacity: 0;
   animation: apparition 1s ease-in-out 0.33s forwards;
 }
 .menu__dessert-block {
+  width: 90%;
+  max-width: 741px;
   opacity: 0;
   animation: apparition 1s ease-in-out 0.66s forwards;
 }
@@ -756,7 +795,7 @@ footer h5 {
 }
 .menu__check-icon {
   width: 59px;
-  height: 69px;
+  height: 70px;
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   position: relative;

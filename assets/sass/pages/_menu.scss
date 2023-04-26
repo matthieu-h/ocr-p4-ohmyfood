@@ -22,6 +22,7 @@
     background: $colour-background-primary;
     display: flex;
     flex-direction: column;
+    align-items: center;
     @media (min-width: 767.98px) {
         width: 73%;
     }
@@ -65,23 +66,29 @@
             }
         }
     }
+    &__heading-starter{
+        align-self: flex-start;
+    }
     & h2{
-        margin: 40px 0px 9px 13px;
+        margin: 40px 0px 9px 0px;
         font-weight: 300;
         font-size: 16px;
+        position: relative;
+        left: 10px;
         @media (min-width: 767.98px) {
-            margin-left: 6%;
-        }
+            left: 36px;            
+        }   
     }
     &__h2-underline{
         background-color: $colour-badge-new-and-choice;
         width: 40px;
         height: 5px;
-        margin-left: 13px;
         margin-bottom: 12px;
+        position: relative;
+        left: 11px;
         @media (min-width: 767.98px) {
-            margin-left: 6%;
-        }
+            left: 36px;            
+        }  
     }
     &__starter{
         @include dish;     
@@ -117,14 +124,20 @@
 
 .menu{
     &__starter-block{
+        width: 90%;
+        max-width: 741px;
         opacity: 0;
         animation: apparition 1s ease-in-out forwards;
     }
     &__main-block{
+        width: 90%;
+        max-width: 741px;
         opacity: 0;
         animation: apparition 1s ease-in-out 0.33s forwards;
     }
     &__dessert-block{
+        width: 90%;
+        max-width: 741px;
         opacity: 0;
         animation: apparition 1s ease-in-out 0.66s forwards;
     }
@@ -141,7 +154,7 @@
 
 .menu__check-icon{
     width: 59px;
-    height: 69px;
+    height: 70px;
     background: $colour-badge-new-and-choice;
     border-radius: 0px 15px 15px 0px;
     position: relative;

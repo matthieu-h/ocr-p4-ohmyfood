@@ -117,6 +117,19 @@
     @media (min-width: 767.98px) {
         height: 228px;
     }
+    & h2{
+        @media (min-width: 767.98px) {
+            margin-left: 12.5%;  
+            margin-bottom: 25px;
+            padding-top: 50px;
+        }
+        @media (min-width: 1440px) {
+            text-align: center;
+            position: relative;
+            right: 422px;
+            margin-left: 0px;
+        }
+    }
 }
 
 .instructions{
@@ -160,6 +173,14 @@
             margin-top: 30px;
             margin-bottom: -24px;
         }
+        @media (min-width: 1440px) {
+            text-align: center;
+            position: relative;
+            left: -445px;
+            margin-left: 0px;
+            align-self: auto;
+        }
+        
     }
     &__first-row{
         width: 100%;

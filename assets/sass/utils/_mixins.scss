@@ -66,12 +66,10 @@
     background: $colour-white;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     & h3{
-        width: 69%;
+        width: 84%;
         font-size: 18px;
         margin: 0px;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     &:hover {
         & .menu__check-icon{
@@ -79,7 +77,11 @@
         }
         & .menu__price p{
         animation: price-translation 300ms ease-in-out forwards;
-        }   
+        }
+        & h3{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 }
 
@@ -95,6 +97,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        width: 84%;
     }
     & .menu__price{
         display: flex;
