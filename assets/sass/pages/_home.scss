@@ -88,6 +88,9 @@
     height: 287.5px;
     width: 100%;
     text-align: center;
+    @media (min-width: 1000px) {
+        height: 239px;
+    }
     &__title{
         margin-top: 39.5px;
         margin-bottom:0px;
@@ -95,6 +98,9 @@
         width: 73%;
         font-size: 24px;
         font-weight: 700;
+        @media (min-width: 1000px) {
+            font-size: 40px;
+        }
     }
     &__promise{
         color: $colour-grey;
@@ -106,6 +112,9 @@
     }
     &__btn{
         margin-top: 27px;
+        @media (min-width: 1000px) {
+            margin-top: 3px;
+        }
     }
     
 }
